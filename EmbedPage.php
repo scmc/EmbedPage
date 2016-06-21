@@ -51,7 +51,7 @@ function wfEmbedPageToolboxLink( $template ) {
 
 	$embedAction = "document.getElementById('article_embed').style.display = (document.getElementById('article_embed').style.display != 'none' ? 'none' : '' ); return false";
 
-	$embedPageCode = "<script type=\"text/javascript\"> document.write('<script type=\"text/javascript\" charset=\"utf-8\" src=\"$wgServer/extensions/embedPage/getPage.php?title=$wgScript/$dbKey&referer=' + document.location.href + ' \"><\/script>');</script>";
+	$embedPageCode = "<script type=\"text/javascript\"> document.write('<script type=\"text/javascript\" charset=\"utf-8\" src=\"$wgServer/extensions/EmbedPage/getPage.php?title=$wgScript/$dbKey&referer=' + document.location.href + ' \"><\/script>');</script>";
 
 	echo "<li><a href='#' onclick=\"$embedAction\">Embed Page</a></li>";
 
